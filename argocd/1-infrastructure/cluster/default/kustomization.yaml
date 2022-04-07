@@ -3,3 +3,4 @@ kind: Kustomization
 resources:
   - base/cp4waiops-ibm-entitlement-key.yaml
   - base/namespace-cp4waiops.yaml
+  - base/openshift-marketplace-ibm-entitlement-key.yaml
