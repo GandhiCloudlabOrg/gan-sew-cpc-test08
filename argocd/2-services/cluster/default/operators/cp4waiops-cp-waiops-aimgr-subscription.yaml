@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: cp4waiops-cp-waiops-aimgr-subscription
+spec:
+  destination:
+    namespace: cp4waiops
+    server: https://kubernetes.default.svc
+  project: 2-services
+  source:
+    path: payload/2-services/namespace/cp4waiops/cp-waiops-aimgr-subscription
+    repoURL: https://github.com/gandhicloudlaborg/gan-sew-cpc-test08
+    targetRevision: main
+    helm:
+      releaseName: cp-waiops-aimgr-subscription
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+  ignoreDifferences: []
