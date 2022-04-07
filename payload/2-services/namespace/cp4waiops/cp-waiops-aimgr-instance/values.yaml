@@ -1,0 +1,5 @@
+"imagePullSecret": "ibm-entitlement-key"
+"namespace": "cp4waiops"
+"storageClass": "ibmc-file-gold-gid"
+"storageClassLargeBlock": "ibmc-file-gold-gid"
+
